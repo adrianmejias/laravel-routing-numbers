@@ -2,9 +2,9 @@ name: PHP Security Checker
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, 1.x-dev ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main, 1.x-dev ]
 
 jobs:
   build:
