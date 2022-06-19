@@ -40,10 +40,15 @@
         "illuminate/support": "^9.17"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.8",
         "guzzlehttp/guzzle": "^7.4",
         "mockery/mockery": "^1.5",
         "orchestra/testbench": "^7.5",
-        "pestphp/pest": "^1.21"
+        "pestphp/pest": "^1.21",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.7",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.1"
     },
     "extra": {
         "branch-alias": {
@@ -73,7 +78,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
-            "pestphp/pest-plugin": true
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
         }
     },
     "minimum-stability": "dev",
