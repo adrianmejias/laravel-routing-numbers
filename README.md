@@ -10,10 +10,6 @@ This version supports `PHP 8.0 or 8.1`. You can install the package via composer
 
 `composer require adrianmejias/laravel-routing-numbers`
 
-To create the `config/routing-numbers.php` configuration file:
-
-`php artisan vendor:publish --tag=routing-numbers`
-
 ## Usage
 
 ### Example
@@ -28,12 +24,7 @@ $bank = RoutingNumbers::bankName('021000021');
 
 Expected Output:
 ```php
-$bank = [
-    'rn' => '021000021',
-    'code' => 200,
-    'message' => 'OK',
-    'name' => 'JPMORGAN CHASE',
-];
+$bank = 'JPMORGAN CHASE';
 ```
 
 ### Api Requests

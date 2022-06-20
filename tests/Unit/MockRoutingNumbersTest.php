@@ -16,10 +16,10 @@ it('should handle mock bank name', function () {
     ];
 
     RoutingNumbers::shouldReceive('bankName')->once()
-        ->with($routingNumber)->andReturn($data);
+        ->with($routingNumber)->andReturn($data['name']);
 
     $result = RoutingNumbers::bankName($routingNumber);
-    expect($result)->toBeArray()->toBe($data);
+    expect($result)->toBeString()->toBe($data['name']);
 });
 
 it('should handle mock bank data', function () {
