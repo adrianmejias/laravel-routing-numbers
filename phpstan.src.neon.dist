@@ -15,6 +15,6 @@ parameters:
         - "#Function GuzzleHttp\\\\Psr7#"
         - "#Instantiated class [a-zA-Z0-9\\\\_]+ not found.#"
         - "#Unsafe usage of new static#"
-    excludePaths:
-        - "src/Illuminate/Testing/ParallelRunner.php"
-        - "src/Illuminate/Testing/Constraints/ArraySubset.php"
+    # excludePaths:
+    #     - "src/Illuminate/Testing/ParallelRunner.php"
+    #     - "src/Illuminate/Testing/Constraints/ArraySubset.php"
