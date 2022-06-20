@@ -8,12 +8,7 @@ use RoutingNumbers;
 
 it('should handle bank name')->expect(
     fn () => RoutingNumbers::bankName('021000021')
-)->toBeArray()->toHaveKeys([
-    'rn',
-    'code',
-    'message',
-    'name',
-])->code->toBe(200)->message->toBe('OK');
+)->toBeString()->toBe('JPMORGAN CHASE');
 
 it('should handle bank data')->expect(
     fn () => RoutingNumbers::bankData('021000021')
