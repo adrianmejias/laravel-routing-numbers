@@ -6,7 +6,7 @@ namespace AdrianMejias\RoutingNumbers\Providers;
 
 class RoutingNumbersServiceProvider extends \Illuminate\Support\ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([

@@ -36,14 +36,14 @@ interface RoutingNumbersContract
      * @param int|string $routingNumber The routing number to get data from.
      * @param string $countryCode The country code of the routing number.
      * @param null|string $callback (optional) name of the JSONP callback function.
-     * @return array
+     * @return string
      * @throws \AdrianMejias\RoutingNumbers\Exceptions\RoutingNumbersException
      */
     public function bankName(
         $routingNumber,
         string $countryCode = 'US',
         ?string $callback = null
-    ): array;
+    ): string;
 
     /**
      * Get bank data from routing number.
@@ -51,12 +51,12 @@ interface RoutingNumbersContract
      * @param int|string $routingNumber The routing number to get data from.
      * @param string $countryCode The country code of the routing number.
      * @param null|string $callback (optional) name of the JSONP callback function.
-     * @return array
+     * @return mixed
      * @throws \AdrianMejias\RoutingNumbers\Exceptions\RoutingNumbersException
      */
     public function bankData(
         $routingNumber,
         string $countryCode = 'US',
         ?string $callback = null
-    ): array;
+    ): mixed;
 }

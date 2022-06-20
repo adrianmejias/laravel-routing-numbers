@@ -5,14 +5,12 @@ on:
     branches: [ main, 1.x-dev ]
     paths:
       - "**.php"
-      - "phpstan.src.neon.dist"
-      - "phpstan.types.neon.dist"
+      - "phpstan.neon.dist"
   pull_request:
     branches: [ main, 1.x-dev ]
     paths:
       - "**.php"
-      - "phpstan.src.neon.dist"
-      - "phpstan.types.neon.dist"
+      - "phpstan.neon.dist"
 
 jobs:
   phpstan:
