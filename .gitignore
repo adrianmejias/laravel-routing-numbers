@@ -13,7 +13,7 @@ yarn-error.log
 /.idea
 /.vscode
 /phpstan.src.neon
-/phpunit.types.neon
+/phpstan.types.neon
 /phpunit.xml
 /.build
 /.phpunit.cache

@@ -51,7 +51,6 @@ jobs:
       run: vendor/bin/pest tests/ --coverage-clover clover.xml
       env:
         XDEBUG_MODE: coverage
-        OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1.0.14

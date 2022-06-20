@@ -35,13 +35,13 @@ class RoutingNumbers implements \AdrianMejias\RoutingNumbers\Contracts\RoutingNu
         if (in_array(
             $countryCode,
             ['US', 'CA', 'MX']
-        ) && preg_match('/^[0-9]{3,17}$/', $routingNumber)) {
+        ) && preg_match('/^[0-9]{3,17}$/', (string) $routingNumber)) {
             return true;
         }
 
         if ($countryCode === 'UK' && preg_match(
             '/^[0-9]{8}$/',
-            $routingNumber
+            (string) $routingNumber
         )) {
             return true;
         }
@@ -54,7 +54,7 @@ class RoutingNumbers implements \AdrianMejias\RoutingNumbers\Contracts\RoutingNu
         $routingNumber,
         string $countryCode = 'US',
         ?string $callback = null
-    ): array {
+    ): string {
         if (! $this->isValidateRoutingNumber($routingNumber, $countryCode)) {
             throw new RoutingNumbersException(
                 'Invalid routing number: Suppoted formats are: ' . implode(', ', [
@@ -69,7 +69,7 @@ class RoutingNumbers implements \AdrianMejias\RoutingNumbers\Contracts\RoutingNu
         return Http::get($this->baseUri('/api/name.json'), [
             'rn' => $routingNumber,
             'callback' => $callback,
-        ])->throw(RoutingNumbersException::class)->json();
+        ])->throw(RoutingNumbersException::class)->json('name', '');
     }
 
     /** @inheritDoc */
@@ -77,7 +77,7 @@ class RoutingNumbers implements \AdrianMejias\RoutingNumbers\Contracts\RoutingNu
         $routingNumber,
         string $countryCode = 'US',
         ?string $callback = null
-    ): array {
+    ): mixed {
         if (! $this->isValidateRoutingNumber($routingNumber, $countryCode)) {
             throw new RoutingNumbersException(
                 'Invalid routing number: Suppoted formats are: ' . implode(', ', [
