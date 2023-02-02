@@ -1,8 +1,8 @@
-# Laravel Routing Numbers
+# Routing Numbers API for Laravel
 
 [![security](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/security.yml/badge.svg)](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/security.yml) [![tests](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/tests.yml/badge.svg)](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/tests.yml) [![PHPStan](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/phpstan.yml/badge.svg)](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/phpstan.yml) [![PHP CS Fixer](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/adrianmejias/laravel-routing-numbers/actions/workflows/php-cs-fixer.yml) [![StyleCI](https://github.styleci.io/repos/446770602/shield?branch=main)](https://github.styleci.io/repos/446770602?branch=main) [![Build Status](https://travis-ci.com/adrianmejias/laravel-routing-numbers.svg?branch=main)](https://travis-ci.com/adrianmejias/laravel-routing-numbers) [![codecov](https://codecov.io/gh/adrianmejias/laravel-routing-numbers/branch/main/graph/badge.svg?token=7TCWYB1YV6)](https://codecov.io/gh/adrianmejias/laravel-routing-numbers) ![Downloads](https://img.shields.io/packagist/dt/adrianmejias/laravel-routing-numbers) ![Packagist](https://img.shields.io/packagist/v/adrianmejias/laravel-routing-numbers) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Liberapay](https://img.shields.io/liberapay/patrons/adrianmejias.svg?logo=liberapay)
 
-[Laravel](https://laravel.com/) API for ACH/NACHA Bank Routing Numbers courty of https://www.routingnumbers.info/.
+ACH/NACHA Bank Routing Numbers API package courtesy of https://www.routingnumbers.info/ for [Laravel](https://laravel.com/).
 
 ## Installation
 
